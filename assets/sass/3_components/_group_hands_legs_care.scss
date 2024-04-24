@@ -1,0 +1,17 @@
+.group_hands_legs_care_wrapper {
+  display: flex;
+  background-color: $thirdColor;
+  justify-content: center;
+
+  .image-wrapper {
+    flex: 25%;
+  }
+
+  .legs_figure {
+    @include p-bottom(410, 296);
+  }
+
+  @include xxs {
+    margin: 0 auto;
+  }
+}

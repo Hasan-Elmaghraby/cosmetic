@@ -1,0 +1,82 @@
+.group_block_desc {
+  position: relative;
+  top: 50%;
+  inset-inline-end: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+
+  @include dir {
+    inset-inline-start: 50%;
+  }
+
+  &.padding_start {
+    padding-inline-start: 15%;
+
+    @include xxs {
+      padding-inline-start: 0%;
+      padding: 15px;
+    }
+  }
+
+  &.text_center {
+    text-align: center;
+  }
+
+  .title {
+    color: #fff;
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin-bottom: 18px;
+  }
+
+  .parg {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  @include sm {
+    padding: 15px;
+
+    .title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .parg {
+      font-size: 1.6rem;
+    }
+  }
+
+  &.black_color {
+    .title,
+    .parg {
+      color: $secondaryColor;
+    }
+  }
+
+  &.small_text {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+
+    .title {
+      font-size: 2.8rem;
+      margin-bottom: 18px;
+    }
+    .parg {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    @include sm {
+      .title {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+      }
+      .parg {
+        font-size: 1.4rem;
+        margin-bottom: 7px;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.group_hair_care_wrapper {
+  display: flex;
+
+  .image-wrapper {
+    flex: 70%;
+  }
+}
+
+.haire_care_figure {
+  height: 100%;
+  @include p-bottom(411, 737);
+}
+
+.group_hair_care_desc_wrapper {
+  flex: 50%;
+  background-color: $primaryColor;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 130%;
+    height: 100%;
+    top: 0;
+    inset-inline-start: 0;
+    background-color: $primaryColor;
+    clip-path: polygon(19% 0, 100% 0%, 100% 100%, 0% 100%);
+    z-index: -1;
+  }
+}
+
+@include xxs {
+  .group_hair_care_desc_wrapper {
+    &::before {
+      display: none;
+    }
+  }
+
+  .group_hair_care_desc {
+    padding: 15px;
+  }
+
+  // .group_hair_care_desc {
+  //   .title {
+  //     font-size: 1.6rem;
+  //     margin-bottom: 5px;
+  //   }
+
+  //   .parg {
+  //     font-size: 1.4rem;
+  //   }
+  // }
+
+  .image-wrapper {
+    display: none;
+  }
+}

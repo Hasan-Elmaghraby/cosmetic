@@ -1,0 +1,13 @@
+.shine_with_cosmetic_wrapper {
+  display: flex;
+  background-color: #fdc9cb;
+
+  .shine_with_cosmetic_desc_wrapper,
+  .image-wrapper {
+    flex: 1;
+  }
+
+  .shine_figure {
+    @include p-bottom(410, 608);
+  }
+}

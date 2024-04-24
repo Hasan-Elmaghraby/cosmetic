@@ -1,0 +1,27 @@
+.section_cards_wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.section_card {
+  display: block;
+  position: relative;
+  padding: 30px 10px;
+  width: 100%;
+  transition: $mainTransition;
+  text-align: center;
+  background-color: $thirdColor;
+  border-radius: $secondaryBorderRadius;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  .title {
+    padding-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    // margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,23 @@
+.care_products_card {
+  display: block;
+  width: 100%;
+  position: relative;
+  border-radius: $mainBorderRadius;
+  overflow: hidden;
+
+  &:hover {
+    .care_product_link {
+      background-color: $thirdColor;
+      border-color: $thirdColor;
+    }
+  }
+
+  &::before {
+    @include overlay($secondaryColor, 0.3);
+    z-index: 1;
+  }
+
+  .care_product_figure {
+    @include p-bottom(328, 610);
+  }
+}

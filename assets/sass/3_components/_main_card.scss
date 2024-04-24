@@ -1,0 +1,126 @@
+.main_card {
+  display: block;
+  position: relative;
+  padding: 40px 0;
+  background-color: #fff;
+  transition: 0.5s;
+  box-shadow: 0 0 60px rgba(#acacac, 0.13);
+  margin: 0 auto;
+  width: 100%;
+  border: 2px solid $thirdColor;
+  border-radius: $thirdBorderRadius;
+
+  @include md {
+    padding: 30px 15px;
+  }
+
+  @include xxs {
+    width: auto;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+
+    .main_button {
+      background-color: $thirdColor;
+      border-color: $thirdColor;
+      color: #fff;
+
+      .icon__ {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  .offer_number {
+    position: absolute;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    width: 60px;
+    height: 30px;
+    top: 5%;
+    inset-inline-end: 0;
+    background-color: $primaryColor;
+    padding: 5px 15px;
+    border-radius: 0 15px 15px 0;
+    z-index: 1;
+
+    @include dir {
+      inset-inline-start: 0;
+    }
+  }
+
+  .image-wrapper {
+    display: block;
+    padding-left: 70px;
+    padding-right: 70px;
+
+    @include md {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .asp-om {
+    transition: 0.4s;
+    padding: 0;
+    justify-content: center;
+
+    img {
+      width: auto;
+      position: relative;
+      max-height: 100%;
+    }
+  }
+
+  .card_desc {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .rating {
+    flex-shrink: 0;
+    .fa-star {
+      color: #d9d9d9;
+      font-size: 12px;
+      color: #efb104;
+    }
+    // .star-color {
+    //   color: #efb104;
+    // }
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $paragraphMainColor;
+    margin-bottom: 8px;
+    margin-top: 18px;
+
+    @include xs {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+    color: $paragraphMainColor;
+    font-weight: 400;
+    color: $headingSecondaryColor;
+    margin-bottom: 11px;
+    margin-top: 5px;
+  }
+}
+
+.swiper-slide {
+  &:nth-of-type(even) {
+    .main_card {
+      .offer_number {
+        background-color: $thirdColor;
+      }
+    }
+  }
+}
