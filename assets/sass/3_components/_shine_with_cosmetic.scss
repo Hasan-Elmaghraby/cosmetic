@@ -34,7 +34,7 @@
       z-index: -1;
 
       .figure__ {
-        padding-bottom: 90%;
+        height: 100%;
 
         &::after {
           @include overlay(#000, 0.3);

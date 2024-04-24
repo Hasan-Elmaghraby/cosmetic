@@ -1957,7 +1957,7 @@ html[dir=ltr] .group_block_desc {
     z-index: -1;
   }
   .shine_with_cosmetic_wrapper .image-wrapper .figure__ {
-    padding-bottom: 90%;
+    height: 100%;
   }
   .shine_with_cosmetic_wrapper .image-wrapper .figure__::after {
     position: absolute;
