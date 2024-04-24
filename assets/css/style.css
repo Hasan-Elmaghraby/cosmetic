@@ -3169,8 +3169,8 @@ html[dir=ltr] .footer_list__ a {
   max-height: 15px;
 }
 .footer_list__ a:hover {
-  -webkit-padding-start: 5px;
-          padding-inline-start: 5px;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
   opacity: 0.8;
 }
 
