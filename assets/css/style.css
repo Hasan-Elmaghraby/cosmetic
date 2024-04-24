@@ -177,6 +177,12 @@ html[dir=ltr] .link__.main_link .figure__ {
 }
 .link__.block_care_link:hover {
   border-color: #7b205a;
+  background-color: #fff;
+  color: #7b205a;
+}
+.link__.block_care_link:hover .figure__ {
+  -webkit-filter: invert(21%) sepia(23%) saturate(3473%) hue-rotate(285deg) brightness(92%) contrast(101%);
+          filter: invert(21%) sepia(23%) saturate(3473%) hue-rotate(285deg) brightness(92%) contrast(101%);
 }
 @media only screen and (max-width: 991px) {
   .link__.block_care_link {
@@ -204,8 +210,13 @@ html[dir=ltr] .link__.main_link .figure__ {
           filter: none;
 }
 .link__.black_color:hover {
-  border-color: rgba(123, 32, 90, 0.2);
-  background-color: rgba(123, 32, 90, 0.3);
+  border-color: #7b205a;
+  background-color: #7b205a;
+  color: #fff;
+}
+.link__.black_color:hover .figure__ {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 .link__.care_product_link {
   background-color: #147382;
@@ -239,7 +250,7 @@ html[dir=ltr] .link__.main_link .figure__ {
   min-width: 185px;
   border: 1px solid #7b205a;
   border-radius: 10px;
-  margin: 0 auto;
+  width: 100%;
   font-size: 1.4rem;
   color: #121212;
   font-weight: 700;
@@ -1555,7 +1566,7 @@ html[dir=ltr] .site_link .icon__ {
 .main_card {
   display: block;
   position: relative;
-  padding: 40px 0;
+  padding: 40px 20px;
   background-color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1607,29 +1618,8 @@ html[dir=ltr] .site_link .icon__ {
 html[dir=ltr] .main_card .offer_number {
   inset-inline-start: 0;
 }
-.main_card .image-wrapper {
-  display: block;
-  padding-left: 70px;
-  padding-right: 70px;
-}
-@media only screen and (max-width: 1199px) {
-  .main_card .image-wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-.main_card .asp-om {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.main_card .asp-om img {
-  width: auto;
-  position: relative;
-  max-height: 100%;
+.main_card .figure__ {
+  padding-bottom: 81.0810810811%;
 }
 .main_card .card_desc {
   text-align: center;

@@ -76,6 +76,13 @@
 
     &:hover {
       border-color: $thirdColor;
+      background-color: #fff;
+      color: $thirdColor;
+
+      .figure__ {
+        filter: invert(21%) sepia(23%) saturate(3473%) hue-rotate(285deg)
+          brightness(92%) contrast(101%);
+      }
     }
 
     @include sm {
@@ -104,8 +111,13 @@
       filter: none;
     }
     &:hover {
-      border-color: rgba($thirdColor, 0.2);
-      background-color: rgba($thirdColor, 0.3);
+      border-color: $thirdColor;
+      background-color: $thirdColor;
+      color: #fff;
+
+      .figure__ {
+        filter: brightness(0) invert(1);
+      }
     }
   }
 
