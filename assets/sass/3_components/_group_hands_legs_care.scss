@@ -2,6 +2,7 @@
   display: flex;
   background-color: $thirdColor;
   justify-content: center;
+  position: relative;
 
   .image-wrapper {
     flex: 25%;
@@ -13,5 +14,9 @@
 
   @include xxs {
     margin: 0 auto;
+
+    .image-wrapper {
+      display: none;
+    }
   }
 }

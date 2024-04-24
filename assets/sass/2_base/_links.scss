@@ -119,6 +119,26 @@
         filter: brightness(0) invert(1);
       }
     }
+
+    @include xxs {
+      color: #fff;
+      border-color: #fff;
+
+      .figure__ {
+        filter: brightness(0) invert(1);
+      }
+
+      &:hover {
+        border-color: $thirdColor;
+        background-color: #fff;
+        color: $thirdColor;
+
+        .figure__ {
+          filter: invert(21%) sepia(23%) saturate(3473%) hue-rotate(285deg)
+            brightness(92%) contrast(101%);
+        }
+      }
+    }
   }
 
   &.care_product_link {

@@ -10,4 +10,34 @@
   .shine_figure {
     @include p-bottom(410, 608);
   }
+
+  @include xxs {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 15px;
+    background-color: transparent;
+
+    .shine_with_cosmetic_desc_wrapper {
+      background-color: transparent;
+
+      .title,
+      .parg {
+        color: #fff;
+      }
+    }
+
+    .image-wrapper {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+
+      .figure__ {
+        &::after {
+          @include overlay(#000, 0.3);
+        }
+      }
+    }
+  }
 }

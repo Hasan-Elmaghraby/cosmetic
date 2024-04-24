@@ -107,8 +107,8 @@
     }
 
     &:hover {
+      padding-inline-start: 5px;
       opacity: 0.8;
-      color: $secondaryColor;
     }
   }
 }

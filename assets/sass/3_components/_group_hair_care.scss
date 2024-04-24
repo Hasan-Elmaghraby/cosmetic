@@ -1,8 +1,32 @@
 .group_hair_care_wrapper {
   display: flex;
+  position: relative;
 
   .image-wrapper {
     flex: 70%;
+  }
+
+  @include xxs {
+    overflow: hidden;
+    padding: 30px 15px;
+
+    .group_hair_care_desc_wrapper {
+      background-color: transparent;
+    }
+
+    .image-wrapper {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+
+      .figure__ {
+        &::after {
+          @include overlay(#000, 0.3);
+        }
+      }
+    }
   }
 }
 
@@ -52,7 +76,7 @@
   //   }
   // }
 
-  .image-wrapper {
-    display: none;
-  }
+  // .image-wrapper {
+  //   display: none;
+  // }
 }
